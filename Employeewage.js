@@ -25,12 +25,12 @@ function getemphrs(empCheck)
 }
 let days=0;
 let maxhrs=0;
-while(days<MAX_NUMBER_DAYS && emphrs<=160)
+for(days=0 ;days<MAX_NUMBER_DAYS ;days++)
 {
     let empCheck=Math.floor(Math.random()*10)%3;
     emphrs+=getemphrs(empCheck);
-    days=days+1;
+    
 }
 
 let empwage = emphrs*WAGE_PER_HR;
-console.log("UC5 Total Emp wage is:" +emphrs +"Hours "+" Working for"+days+" days "+"is :"+empwage);
+console.log("UC4 Total Emp Daily wage is:" +empwage);
