@@ -1,17 +1,27 @@
-//UC1//
-const IS_ABSENT=0;
+//UC2 Employee Daily Wage//
 
+const IS_PART_TIME=1;
+const IS_FULL_TIME=2;
+const PART_TIME_HRS=4;
+const FULL_TIME_HRS=8;
+const WAGE_PER_HR=100;
 
-//using random function to identify employee is present or not
-
-    let empCheck=Math.floor(Math.random()*10) % 2;
-
-//using programming construct that is selection statement
-     if(empCheck==IS_ABSENT)
-     
-         console.log("UC1: employee absent");
-     
-     else
-     
-         console.log("UC1: employee present");
-     
+let emphrs=4;
+empCheck=Math.floor(Math.random ()) * 3;
+function getemphrs(empCheck)
+{
+    switch(empCheck)
+{
+    case IS_PART_TIME:
+        emphrs=PART_TIME_HRS;
+        break;
+    case IS_FULL_TIME:
+        emphrs=FULL_TIME_HRS;
+        break;
+     default:
+         return 4; 
+}
+}
+emphrs=getemphrs(empCheck);
+let empwage = emphrs*WAGE_PER_HR;
+console.log("UC3 Emp Daily wage is:" +empwage);
