@@ -1,4 +1,4 @@
-//UC2 Employee Daily Wage//
+//UC3 Employee Function//
 
 const IS_PART_TIME=1;
 const IS_FULL_TIME=2;
